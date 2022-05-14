@@ -1,6 +1,6 @@
 Technical assessment:
 
-This project is developed by using Java8, Spring Boot Rest, Spring Boot Web, Spring @Scheduled, in- memory H2 database.
+This project is developed by using Java 8, Spring boot Rest, Spring boot Web, Spring boot JPA, Spring boot Cache , Spring boot scheduler, in- memory H2 database 
  
 Building a Project 
 		
