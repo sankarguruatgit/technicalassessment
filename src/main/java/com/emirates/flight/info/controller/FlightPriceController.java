@@ -34,14 +34,24 @@ public class FlightPriceController {
 		logger.info("getFligtPrice method called");
 		logger.info("Journey Date :"+ date);
 		logger.info("Flight Number  :"+filghtNumber);
-		
+		FlightTariff flightTariff =null;
+		try{
 		long startTime = System.currentTimeMillis();
-		FlightTariff flightTariff = priceEngineService.getFlightPrice(filghtNumber,date);
+		 flightTariff = priceEngineService.getFlightPrice(filghtNumber,date);
 		long endTime = System.currentTimeMillis();
 		long totalResponseTime = endTime - startTime;	
 		
 		logger.info(" Total SLA Response time in MilliSeconds :"+totalResponseTime);
-	
-		return new ResponseEntity<FlightTariff>(flightTariff, new HttpHeaders(), HttpStatus.OK);   	
+
+		if(flightTariff!=null && flightTariff.getPrice()>0) {
+			return new ResponseEntity<FlightTariff>(flightTariff, new HttpHeaders(), HttpStatus.OK);
+		} else {
+			logger.info("Not Found");
+			return new ResponseEntity<FlightTariff>(flightTariff, new HttpHeaders(), HttpStatus.NOT_FOUND);
+		}
+
+		} catch(Exception ex){
+		return new ResponseEntity<>(flightTariff, HttpStatus.INTERNAL_SERVER_ERROR);
+	}
    }
 }

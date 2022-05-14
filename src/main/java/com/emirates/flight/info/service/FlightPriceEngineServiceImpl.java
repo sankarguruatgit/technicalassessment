@@ -24,8 +24,8 @@ public class FlightPriceEngineServiceImpl implements FlightPriceEngineService {
 		price.setPrice_currency(price.getPrice_currency());
 		
 		if(!tariffRepo.getFlightTariff(flightNumber, date).isEmpty())
-		 price.setPrice(tariffRepo.getFlightTariff(flightNumber, date).get(0));
-		
+		 	price.setPrice(tariffRepo.getFlightTariff(flightNumber, date).get(0));
+
 		return price;
 	}
 
