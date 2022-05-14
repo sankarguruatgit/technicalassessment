@@ -26,12 +26,12 @@ Swagger Details :
 
 To Get Flight Number Rest API Endoint:
 	
-	     http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB'
+	     http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB
 	
 To Get Flight Price Rest API Endoint:
 
-	     http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB'
-	
+	     http://localhost:9090/api/v1/price?date=2022-05-18&flightNumber=EK101
+
 
 System health Check :
 
