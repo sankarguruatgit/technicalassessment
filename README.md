@@ -1,5 +1,6 @@
-Emirates technical assessment:
- This sample project contains two Rest API end points, the project is developed by using Java88, Spring Boot Rest, Spring Boot Web, spring @Scheduled
+Emirates Technical assessment:
+
+ This is a sample project which contains two Rest API end points. This project is developed by using Java8, Spring Boot Rest, Spring Boot Web, Spring @Scheduled, in- memory H2 database.
  
 Building a Project : 
 To build a project to run command mvn clean install in the project directory
