@@ -2,21 +2,17 @@ Emirates Technical assessment:
 
 This project is developed by using Java8, Spring Boot Rest, Spring Boot Web, Spring @Scheduled, in- memory H2 database.
  
-Building a Project : 
+Building a Project : To build a project to run command 
+		mvn clean install
 
-	To build a project to run 
-		command mvn clean install in the project directory
-
-Running a Spring Boot Project
-	To run a Spring Boot, run the command: 
-	     mvn spring-boot:run in the project directory.
+Running a Spring Boot Project, To run the command: 
+	     	mvn spring-boot:run
 
 Working with the IDE
  you can simply import the project in either Eclipse or IntelliJ.
  
-
-Running Tests
-	The command mvn clean install from within a project will run the unit tests 
+Running Tests :
+	 The command mvn clean install from within a project will run the unit tests 
 
 
 Swagger Details :
