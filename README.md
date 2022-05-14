@@ -2,11 +2,11 @@ Technical assessment:
 
 This project is developed by using Java8, Spring Boot Rest, Spring Boot Web, Spring @Scheduled, in- memory H2 database.
  
-Building a Project : To build a project to run command 
+Building a Project 
 		
 	mvn clean install
 
-Running a Spring Boot Project, To run the command: 
+Running a Spring Boot Project
 	
 	mvn spring-boot:run
 
@@ -24,25 +24,25 @@ Swagger Details :
           
 		http://localhost:9090/swagger-ui/index.html
 
-To Retrieve Flight Number:
+To Get Flight Number Rest API Endoint:
 	
-	Rest API endpoint : http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB'
+	     http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB'
 	
-To Get Flight Price :
+To Get Flight Price Rest API Endoint:
 
-	Rest API endpoint : http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB'
+	     http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB'
 	
 
 System health Check :
 
- 	Actuator end point To verify the system check 
+ 	Actuator end point to verify the service health check 
 
 		http://localhost:9090/actuator/health
 
 
  Memory Database:
   
-In Memory H2 data base is used for data persistent, The following table will be created while application startup
+In Memory H2 data base is used for temporary data persistent. 
 
 		H2 Console endpoint : http://localhost:9090/h2
 			Table names:
