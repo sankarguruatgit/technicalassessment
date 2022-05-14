@@ -1,17 +1,21 @@
-Emirates Technical assessment:
+Technical assessment:
 
 This project is developed by using Java8, Spring Boot Rest, Spring Boot Web, Spring @Scheduled, in- memory H2 database.
  
 Building a Project : To build a project to run command 
-		mvn clean install
+		
+	mvn clean install
 
 Running a Spring Boot Project, To run the command: 
-	     	mvn spring-boot:run
+	
+	mvn spring-boot:run
 
-Working with the IDE
- you can simply import the project in either Eclipse or IntelliJ.
+Working with the IDE :  
+
+	you can simply import the project in either Eclipse or IntelliJ.
  
 Running Tests :
+
 	 The command mvn clean install from within a project will run the unit tests 
 
 
@@ -22,7 +26,7 @@ Swagger Details :
 
 To Retrieve Flight Number:
 	
-	Rest API endpoint : 	http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB'
+	Rest API endpoint : http://localhost:9090/api/v1/flight?date=2022-05-18&airPortCodeDept=DXB&airPortCodeArrival=DUB'
 	
 To Get Flight Price :
 
